@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Profile View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="EditProfileViewController" customModule="semana7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiw-aj-1nC">
+                                <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Edit Profile" id="n0E-ZD-vPW">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="le3-Qh-vmh">
+                                            <color key="tintColor" red="0.167862922" green="0.1191635206" blue="0.14839929339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onClickClose:" destination="Y6W-OH-hqX" id="Lz3-Qt-XX7"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="v28-Po-c2d">
+                                            <color key="tintColor" red="0.167862922" green="0.1191635206" blue="0.14839929339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onClickSave:" destination="Y6W-OH-hqX" id="CfM-Kb-DIS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bart-1" translatesAutoresizingMaskIntoConstraints="NO" id="IgT-Ox-6Pb">
+                                <rect key="frame" x="0.0" y="88" width="390" height="195"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="K2B-el-1lZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27m-n3-FvK">
+                                <rect key="frame" x="287" y="242" width="87" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cámara">
+                                    <color key="baseForegroundColor" red="0.091420424659999999" green="0.10119118539999999" blue="0.097288989620000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickOpenSource:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IQl-ST-pDH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre completo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dNq-cS-hqv">
+                                <rect key="frame" x="20" y="328" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3C9-zD-i3G">
+                                <rect key="frame" x="20" y="407" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uiw-aj-1nC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="32q-0t-hYQ"/>
+                            <constraint firstItem="27m-n3-FvK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="305" id="3xE-Em-c8B"/>
+                            <constraint firstItem="27m-n3-FvK" firstAttribute="top" secondItem="uiw-aj-1nC" secondAttribute="bottom" constant="154" id="94f-Rx-7eL"/>
+                            <constraint firstItem="3C9-zD-i3G" firstAttribute="top" secondItem="dNq-cS-hqv" secondAttribute="bottom" constant="45" id="96d-R4-zRF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3C9-zD-i3G" secondAttribute="trailing" constant="20" id="B3X-Vx-kRM"/>
+                            <constraint firstItem="uiw-aj-1nC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="CnL-L4-FNl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dNq-cS-hqv" secondAttribute="trailing" constant="20" id="Glb-18-gH7"/>
+                            <constraint firstItem="27m-n3-FvK" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="2" id="WQm-i8-BSd"/>
+                            <constraint firstItem="IgT-Ox-6Pb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aVc-76-oVL"/>
+                            <constraint firstItem="dNq-cS-hqv" firstAttribute="top" secondItem="IgT-Ox-6Pb" secondAttribute="bottom" constant="45" id="iyZ-y0-Jm6"/>
+                            <constraint firstItem="IgT-Ox-6Pb" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="mf6-Zz-qcZ"/>
+                            <constraint firstItem="3C9-zD-i3G" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="mit-6H-UrC"/>
+                            <constraint firstItem="dNq-cS-hqv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="nG1-dm-mdh"/>
+                            <constraint firstItem="uiw-aj-1nC" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="p64-qH-7Xw"/>
+                            <constraint firstItem="IgT-Ox-6Pb" firstAttribute="top" secondItem="uiw-aj-1nC" secondAttribute="bottom" id="p6X-a7-WrZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profileImage" destination="IgT-Ox-6Pb" id="mUu-ef-XhW"/>
+                        <outlet property="txtEmail" destination="3C9-zD-i3G" id="0mf-Jh-9DQ"/>
+                        <outlet property="txtName" destination="dNq-cS-hqv" id="Yl3-0B-ikm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.69230769230769" y="59.004739336492889"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bart-1" width="184.66667175292969" height="184.33332824707031"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

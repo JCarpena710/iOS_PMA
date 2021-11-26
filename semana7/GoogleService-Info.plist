@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>114407070276-taooi0scqtdhcm1uqhocgrteeegb8n3d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.114407070276-taooi0scqtdhcm1uqhocgrteeegb8n3d</string>
+	<key>API_KEY</key>
+	<string>AIzaSyABhr4VvMjwggfm81ngL5xGshXe9ViMG6c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>114407070276</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.tecsup.semana7</string>
+	<key>PROJECT_ID</key>
+	<string>airbnb-a-copy10</string>
+	<key>STORAGE_BUCKET</key>
+	<string>airbnb-a-copy10.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:114407070276:ios:7d0a9144215242cf2a3a11</string>
+</dict>
+</plist>
